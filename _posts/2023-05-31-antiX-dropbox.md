@@ -7,8 +7,9 @@ title: Dropbox meets AntiX Linux
 comments: true
 hide: false
 search_exclude: false
----Dropbox meets AntiX Linux
-# 
+---
+# Dropbox meets AntiX Linux
+ 
 oK LET ME BE CLEAR. i REALLY DON'T HAVE ANY IDEA WHY ALL THESE STEPS WORK.
 They worked for me so here they are.
 
@@ -23,6 +24,21 @@ They worked for me so here they are.
 
 ### Getting Dropbox
 It is better to get Dropbox from the oficial site rather than from 
+
+
+
+
+# useful stuff
+[What is antiX and how to try it out or install it.](https://www.antixforum.com/forums/topic/what-is-antix-and-how-to-try-it-out-or-install-it/)
+[Short essential how-to list for the complete Linux newbie.](https://www.antixforum.com/forums/topic/short-essential-how-to-list-for-the-complete-linux-newbie/)
+[How-to install applications – 2020 version.](https://www.antixforum.com/forums/topic/how-to-install-applications-2020-version/)
+[How to: correctly use antiX forum](https://www.antixforum.com/forums/topic/how-to-correctly-use-antix-forum/)
+[How to get HELP with an antiX PROBLEM.](https://www.antixforum.com/forums/topic/how-to-get-help-with-an-antix-problem/)
+https://www.antixforum.com/forums/forum/general/other-languages/portuguese/
+[PPC user tutorials maybe](https://www.antixforum.com/forums/users/ppc/engagements/)
+[Main AntiX FaQ](http://download.tuxfamily.org/antix/docs-antiX-21/FAQ/index.html)
+[]()
+
 
 ## Basic formatting
 ```bash
