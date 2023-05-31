@@ -68,11 +68,20 @@ If you read throughly through this you may be able to do every thing by the comm
 But at least I am not so pedantic.
 Just click on the portion  encircled in red ink
 ![image](https://github.com/TejasAvinashShetty/silvercloud/assets/27445854/9e33f23b-7468-4c0d-8495-47283e3f7bc1)
-We will get the following. Click on the **Add printer **
+We will get the following. Click on the **Add printer**
 ![image](https://github.com/TejasAvinashShetty/silvercloud/assets/27445854/05f071a3-df2b-476c-acdc-a515944c2bbc)
+This goes to what we see below. Select the printer as below. If it is not present try reconnecting the printer and praying to god.
+![image](https://github.com/TejasAvinashShetty/silvercloud/assets/27445854/c452b75a-3972-4686-a2a7-7427f986a54a)
+Hopefully you are lucky and just follow the on screen instruction here on.
 
+If at any time, you don't end up getiing a printout just  delete all the printers you have in CUPS and start over again.
+
+
+### extra info 
+From [Installing Printers in Linux | CUPS, Printing, and Scanning - YouTube : Chris Titus](https://www.youtube.com/watch?v=En2DJAMpwmY&pp=ygUcaHAgcHJpbnRlciBub3Qgd29ya2luZyBsaW51eA%3D%3D)
 
 It seems to do stuff from the command line you could do the following
+
 CUPS Setup - localhost:631
 
 Setup user with modification to use printers
@@ -87,84 +96,3 @@ If this post has intrigued you about AntiX linux please see
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JCTaUAP6sSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 or see [run with dolphin ](https://www.youtube.com/@runwiththedolphin)
-You can use *italics*, **bold**, `code font text`, and create [links](https://www.markdownguide.org/cheat-sheet/). Here's a footnote [^1]. Here's a horizontal rule:
-
----
-
-## Lists
-
-Here's a list:
-
-- item 1
-- item 2
-
-And a numbered list:
-
-1. item 1
-1. item 2
-
-## Boxes and stuff
-
-> This is a quotation
-
-{% include alert.html text="You can include alert boxes" %}
-
-...and...
-
-{% include info.html text="You can include info boxes" %}
-
-## Images
-
-![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
-
-## Code
-
-You can format text and code per usual 
-
-General preformatted text:
-
-    # Do a thing
-    do_thing()
-
-Python code and output:
-
-```python
-# Prints '2'
-print(1+1)
-```
-
-    2
-
-Formatting text as shell commands:
-
-```shell
-echo "hello world"
-./some_script.sh --option "value"
-wget https://example.com/cat_photo1.png
-```
-
-Formatting text as YAML:
-
-```yaml
-key: value
-- another_key: "another value"
-```
-
-
-## Tables
-
-| Column 1 | Column 2 |
-|-|-|
-| A thing | Another thing |
-
-
-## Tweetcards
-
-{% twitter https://twitter.com/jakevdp/status/1204765621767901185?s=20 %}
-
-
-## Footnotes
-
-
-
-[^1]: This is the footnote.
