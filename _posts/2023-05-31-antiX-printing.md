@@ -9,6 +9,8 @@ hide: false
 search_exclude: false
 ---
 # HP Printer meets AntiX Linux
+oK LET ME BE CLEAR. i REALLY DON'T HAVE ANY IDEA WHY ALL THESE STEPS WORK.
+They worked for me so here they are.
 
 ## Acknowledgements
 - [Install HP Printer drivers in Ubuntu, Linux Mint, and elementary OS : FossLinux](https://www.fosslinux.com/1547/install-hp-printer-drivers-in-ubuntu-linux-mint-and-elementary-os.htm)
@@ -17,7 +19,7 @@ search_exclude: false
 - [How to Fix "Systemctl Command Not Found" Error in Linux](https://allthings.how/how-to-fix-systemctl-command-not-found-error-in-linux/)
 - [Installing Printers in Linux | CUPS, Printing, and Scanning - YouTube : Chris Titus](https://www.youtube.com/watch?v=En2DJAMpwmY&pp=ygUcaHAgcHJpbnRlciBub3Qgd29ya2luZyBsaW51eA%3D%3D)
 
-c headings as you wish but repeating the hash character, such as you see in the line `## File names` above.
+
 
 
 ## Basic formatting
@@ -34,6 +36,22 @@ after which you should be able to login in browser using
 ```html
 http://localhost:631
 ```
+## HPLIP
+*It would probably be better to install HPLIP also while we are at it as no harm done.
+I don't think so the system made any use of it but I may be mistaken.*
+As in [Install HP Printer drivers in Ubuntu, Linux Mint, and elementary OS : FossLinux](https://www.fosslinux.com/1547/install-hp-printer-drivers-in-ubuntu-linux-mint-and-elementary-os.htm)
+We 
+- check if we already have HPLIP via `dpkg -l hplip` *not there*
+- decided not to install HPLIP from [Get HPLIP](https://developers.hp.com/hp-linux-imaging-and-printing/gethplip) as we have no idea of the COMPATIBILITY with our system or the distribution
+- decided to go with 
+```bash 
+   sudo apt update
+   sudo apt upgrade
+   sudo apt install hplip hplip-gui
+   ``` 
+   as we felt it would be more compatible with our system
+
+
 ## An aside
 AntiX is not a systemd distro. So, systemctl won't work in it. So tutorials such as [Installing Printers in Linux | CUPS, Printing, and Scanning - YouTube : Chris Titus](https://www.youtube.com/watch?v=En2DJAMpwmY&pp=ygUcaHAgcHJpbnRlciBub3Qgd29ya2luZyBsaW51eA%3D%3D)
 won't work off the bat. We need to improvise. So we looked at [How to Fix "Systemctl Command Not Found" Error in Linux](https://allthings.how/how-to-fix-systemctl-command-not-found-error-in-linux/)
@@ -45,12 +63,20 @@ sudo systemctl start cups`
 We have this page for CUPS
 ![image](https://github.com/TejasAvinashShetty/silvercloud/assets/27445854/98cd139d-a363-4667-84fa-36f6a7268ce4)
 We then click on the highlighted area ![image](https://github.com/TejasAvinashShetty/silvercloud/assets/27445854/0406d58b-fa38-4f58-859b-5505de8546d3)
-
+This leads us to ![image](https://github.com/TejasAvinashShetty/silvercloud/assets/27445854/63472cff-8c25-457f-a344-2144f92bb400)
+If you read throughly through this you may be able to do every thing by the command line.
+But at least I am not so pedantic.
+Just click on the portion  encircled in red ink
+![image](https://github.com/TejasAvinashShetty/silvercloud/assets/27445854/9e33f23b-7468-4c0d-8495-47283e3f7bc1)
+We will get the following. Click on the **Add printer **
+![image](https://github.com/TejasAvinashShetty/silvercloud/assets/27445854/05f071a3-df2b-476c-acdc-a515944c2bbc)
 
 
 It seems to do stuff from the command line you could do the following
 CUPS Setup - localhost:631
+
 Setup user with modification to use printers
+
 ```bash
 
 sudo usermod -aG lpadmin username
