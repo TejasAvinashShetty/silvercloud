@@ -23,20 +23,64 @@ They worked for me so here they are.
 ## Install Dropbox
 
 ### Getting Dropbox
-It is better to get Dropbox from the oficial site rather than from 
+First update the package lst and ensure we are on the latest compatible version of packages  this section is paraphrased from
+[How to install Dropbox and setup sync on Ubuntu](https://www.fosslinux.com/17023/how-to-install-dropbox-and-setup-sync-on-ubuntu.htm)
 
+```bash
+sudo apt update
+sudo apt upgrade
+```
+
+Next, make sure that the wget package is installed on your system. If it is not installed, you can install it using the following command:
+
+```bash
+sudo apt install wget
+```
+Finally,
+
+
+
+
+
+```bash
+
+```
+It is better to get Dropbox from the oficial site rather than from debian repositories
+[Download Dropbox linux](https://www.dropbox.com/install)
+By command line
+```bash
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+```
+or by downloading the appropriate debian package 64 bit ubuntu (risky as it is actually for Ubuntu)
+
+
+It will download the dropbox and extract it to your home directory. The extracted folder will be hidden 
+
+## Start Dropbox
+To start dropbox, enter
+```bash
+~/.dropbox-dist/dropboxd
+```
 
 
 
 # useful stuff
 [What is antiX and how to try it out or install it.](https://www.antixforum.com/forums/topic/what-is-antix-and-how-to-try-it-out-or-install-it/)
+
 [Short essential how-to list for the complete Linux newbie.](https://www.antixforum.com/forums/topic/short-essential-how-to-list-for-the-complete-linux-newbie/)
+
 [How-to install applications – 2020 version.](https://www.antixforum.com/forums/topic/how-to-install-applications-2020-version/)
+
 [How to: correctly use antiX forum](https://www.antixforum.com/forums/topic/how-to-correctly-use-antix-forum/)
+
 [How to get HELP with an antiX PROBLEM.](https://www.antixforum.com/forums/topic/how-to-get-help-with-an-antix-problem/)
+
 https://www.antixforum.com/forums/forum/general/other-languages/portuguese/
+
 [PPC user tutorials maybe](https://www.antixforum.com/forums/users/ppc/engagements/)
+
 [Main AntiX FaQ](http://download.tuxfamily.org/antix/docs-antiX-21/FAQ/index.html)
+
 []()
 
 
